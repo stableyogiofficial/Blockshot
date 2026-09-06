@@ -36,10 +36,16 @@ inside a file you share.
 
 - Windows 10 or 11, an NVIDIA card with 12 GB or more.
 - **ComfyUI** (the Painter) — any install: portable, desktop, Stability Matrix. Blockshot finds it.
-- **A local text model** (the Writer) — LM Studio or any OpenAI-style server. Pick any model you like.
+- **A writing model** (the Writer) — inside LM Studio, or any OpenAI-style server. Download it from
+  LM Studio's own search page (2 to 9 GB, an 8B model is plenty), then switch LM Studio's server on.
 - The model pack for the starter workflow: the Muse by Stable Yogi checkpoint (free on Civitai or
   from the portal), plus its text encoder and VAE (the app downloads those two). Already have the files?
   Point the app at that folder — nothing downloads twice.
+
+> **The two model kinds are not interchangeable.** Your ComfyUI `.safetensors` draw; they cannot write.
+> The Writer's model is a separate download inside LM Studio, even when your ComfyUI folder is full.
+> Point LM Studio at a ComfyUI folder and it answers `No LM Runtime found for model format
+> 'torchSafetensors'`. Five-minute walk-through: <https://forgebun.com/go/bs_writer>
 
 ## What Free does
 
