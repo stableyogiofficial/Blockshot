@@ -8,7 +8,7 @@ With **Pro** on, every shot becomes a short video, the eyes check every picture 
 misses, and one button runs the whole thing overnight and cuts the film. Pro switches on with the
 Blockshot key from your Stable Yogi account page — one setup file for everyone.
 
-> **Early test (0.2.1).** This is the first public build. Please break it and tell me:
+> **Early test (0.3.0).** This is the first public build. Please break it and tell me:
 > your Stable Yogi account page (Settings → API, the Blockshot card) · the Discord · or open an issue here.
 
 ## Download
@@ -17,8 +17,8 @@ Get the setup file from the **Releases** page on the right. Two files:
 
 | File | What it is |
 |---|---|
-| `Blockshot-Setup-0.2.1.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
-| `Blockshot-0.2.1-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
+| `Blockshot-Setup-0.3.0.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
+| `Blockshot-0.3.0-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
 
 Each file has a `.sha256` next to it. The setup is not code-signed, so Windows shows its SmartScreen
 box once: **More info → Run anyway.**
@@ -36,9 +36,10 @@ inside a file you share.
 
 - Windows 10 or 11, an NVIDIA card with 12 GB or more.
 - **ComfyUI** (the Painter) — any install: portable, desktop, Stability Matrix. Blockshot finds it.
-- **A writing model** (the Writer, an LLM) — in **LM Studio** or **Ollama**; the app has a button for each,
-  and any other OpenAI-style server works. LM Studio: download from its search page (2 to 9 GB, an 8B model
-  is plenty) and switch its server on. Ollama: `ollama pull qwen3:8b`, and that is all.
+- **A writing model** (the Writer, an LLM) — **or nothing at all**: press *Set it up for me* on the Writer
+  card and Blockshot downloads and runs its own (llama.cpp + Qwen3 4B, about 2.5 GB, removable). Already have
+  **LM Studio** or **Ollama**? The app finds them and uses those, with a button for each. LM Studio: download
+  from its search page and switch its server on. Ollama: `ollama pull qwen3:8b`, and that is all.
 - The model pack for the starter workflow: the Muse by Stable Yogi checkpoint (free on Civitai or
   from the portal), plus its text encoder and VAE (the app downloads those two). Already have the files?
   Point the app at that folder — nothing downloads twice.
@@ -73,7 +74,7 @@ move it when you need.
 
 ## First run
 
-1. Start ComfyUI and your text model server.
+1. Start ComfyUI. The text model is either yours (LM Studio, Ollama) or the app's own.
 2. Run Blockshot. The wizard finds both, gets the model pack, checks the starter workflow and draws one
    test picture.
 3. New board → type an idea → Write → Draw. Open the viewer on any picture, Redo or Keep.
@@ -82,9 +83,9 @@ The engine is a plain local API, documented live at `http://127.0.0.1:7150/v1/do
 
 ## Learn it
 
-- Six short lessons, in the order you use the app: https://forgebun.com/go/bs_learn
+- Seven short lessons, in the order you use the app: https://forgebun.com/go/bs_learn
 - How the first film was made, and what went wrong: https://forgebun.com/go/bs_film
 
 ## Feedback
 
-Tell me what broke, what confused you, and what you want next. Early-test feedback shapes 0.3.
+Tell me what broke, what confused you, and what you want next. Early-test feedback shapes what comes next.
