@@ -36,14 +36,15 @@ inside a file you share.
 
 - Windows 10 or 11, an NVIDIA card with 12 GB or more.
 - **ComfyUI** (the Painter) — any install: portable, desktop, Stability Matrix. Blockshot finds it.
-- **A writing model** (the Writer) — inside LM Studio, or any OpenAI-style server. Download it from
-  LM Studio's own search page (2 to 9 GB, an 8B model is plenty), then switch LM Studio's server on.
+- **A writing model** (the Writer, an LLM) — in **LM Studio** or **Ollama**; the app has a button for each,
+  and any other OpenAI-style server works. LM Studio: download from its search page (2 to 9 GB, an 8B model
+  is plenty) and switch its server on. Ollama: `ollama pull qwen3:8b`, and that is all.
 - The model pack for the starter workflow: the Muse by Stable Yogi checkpoint (free on Civitai or
   from the portal), plus its text encoder and VAE (the app downloads those two). Already have the files?
   Point the app at that folder — nothing downloads twice.
 
 > **The two model kinds are not interchangeable.** Your ComfyUI `.safetensors` draw; they cannot write.
-> The Writer's model is a separate download inside LM Studio, even when your ComfyUI folder is full.
+> The Writer's model is a separate download inside LM Studio or Ollama, even when your ComfyUI folder is full.
 > Point LM Studio at a ComfyUI folder and it answers `No LM Runtime found for model format
 > 'torchSafetensors'`. Five-minute walk-through: <https://forgebun.com/go/bs_writer>
 
