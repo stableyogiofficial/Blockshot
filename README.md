@@ -8,7 +8,7 @@ With **Pro** on, every shot becomes a short video, the eyes check every picture 
 misses, and one button runs the whole thing overnight and cuts the film. Pro switches on with the
 Blockshot key from your Stable Yogi account page — one setup file for everyone.
 
-> **Early test (0.3.1).** This is the first public build. Please break it and tell me:
+> **Early test (0.4.0).** This is the first public build. Please break it and tell me:
 > your Stable Yogi account page (Settings → API, the Blockshot card) · the Discord · or open an issue here.
 
 ## Download
@@ -17,8 +17,8 @@ Get the setup file from the **Releases** page on the right. Two files:
 
 | File | What it is |
 |---|---|
-| `Blockshot-Setup-0.3.1.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
-| `Blockshot-0.3.1-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
+| `Blockshot-Setup-0.4.0.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
+| `Blockshot-0.4.0-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
 
 Each file has a `.sha256` next to it. The setup is not code-signed, so Windows shows its SmartScreen
 box once: **More info → Run anyway.**
@@ -40,9 +40,10 @@ inside a file you share.
   card and Blockshot downloads and runs its own (llama.cpp + Qwen3 4B, about 2.5 GB, removable). Already have
   **LM Studio** or **Ollama**? The app finds them and uses those, with a button for each. LM Studio: download
   from its search page and switch its server on. Ollama: `ollama pull qwen3:8b`, and that is all.
-- The model pack for the starter workflow: the Muse by Stable Yogi checkpoint (free on Civitai or
-  from the portal), plus its text encoder and VAE (the app downloads those two). Already have the files?
-  Point the app at that folder — nothing downloads twice.
+- **The model pack** for the starter workflow: the Muse by Stable Yogi checkpoint plus its text encoder
+  and VAE. All of it downloads straight from Stable Yogi — no account, no key, nothing to sign up for.
+  **Already have Krea 2 models?** Skip the pack: *Settings → Workflows → Model files* lists everything
+  ComfyUI can see and you pick what you want, whatever the files are called.
 
 > **The two model kinds are not interchangeable.** Your ComfyUI `.safetensors` draw; they cannot write.
 > The Writer's model is a separate download inside LM Studio or Ollama, even when your ComfyUI folder is full.
