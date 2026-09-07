@@ -8,7 +8,7 @@ With **Pro** on, every shot becomes a short video, the eyes check every picture 
 misses, and one button runs the whole thing overnight and cuts the film. Pro switches on with the
 Blockshot key from your Stable Yogi account page — one setup file for everyone.
 
-> **Early test (0.4.0).** This is the first public build. Please break it and tell me:
+> **Early test (0.4.1).** This is the first public build. Please break it and tell me:
 > your Stable Yogi account page (Settings → API, the Blockshot card) · the Discord · or open an issue here.
 
 ## Download
@@ -17,8 +17,8 @@ Get the setup file from the **Releases** page on the right. Two files:
 
 | File | What it is |
 |---|---|
-| `Blockshot-Setup-0.4.0.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
-| `Blockshot-0.4.0-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
+| `Blockshot-Setup-0.4.1.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
+| `Blockshot-0.4.1-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
 
 Each file has a `.sha256` next to it. The setup is not code-signed, so Windows shows its SmartScreen
 box once: **More info → Run anyway.**
