@@ -1,14 +1,16 @@
 # Blockshot
 
 **The image and video board.** One line about a story becomes a cast, the sets, a shot list and one
-picture per shot — drawn on your own PC by your own ComfyUI, written by a local text model. Nothing
-leaves your machine. No credits, no cloud.
+picture per shot — drawn on your own PC by your own ComfyUI, written by a local text model. Your story,
+your pictures and your videos never leave your machine. No credits, no cloud. (Blockshot asks Stable Yogi
+for a news card once a day, and you can switch that off; downloads and the Pro check happen only when you
+ask for them.)
 
 With **Pro** on, every shot becomes a short video, the eyes check every picture and take and redraw the
 misses, and one button runs the whole thing overnight and cuts the film. Pro switches on with the
 Blockshot key from your Stable Yogi account page — one setup file for everyone.
 
-> **Early test (0.4.1).** This is the first public build. Please break it and tell me:
+> **Early test (0.4.2).** This is the first public build. Please break it and tell me:
 > your Stable Yogi account page (Settings → API, the Blockshot card) · the Discord · or open an issue here.
 
 ## Download
@@ -17,8 +19,8 @@ Get the setup file from the **Releases** page on the right. Two files:
 
 | File | What it is |
 |---|---|
-| `Blockshot-Setup-0.4.1.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
-| `Blockshot-0.4.1-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
+| `Blockshot-Setup-0.4.2.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
+| `Blockshot-0.4.2-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
 
 Each file has a `.sha256` next to it. The setup is not code-signed, so Windows shows its SmartScreen
 box once: **More info → Run anyway.**
