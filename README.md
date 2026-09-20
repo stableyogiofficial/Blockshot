@@ -25,6 +25,9 @@ Get the setup file from the **Releases** page on the right. Two files:
 Each file has a `.sha256` next to it. The setup is not code-signed, so Windows shows its SmartScreen
 box once: **More info → Run anyway.**
 
+**New in 0.4.3:** put a song under your film, and have every cut land on its beat. What both settings
+do, what to set them to, and what they will not do: <https://forgebun.com/go/bs_film>
+
 ## The first film, and the example inside
 
 "Marry Me, Maybe" (75 s) was written, drawn, rolled and cut inside Blockshot from one line of idea and twelve
@@ -88,7 +91,7 @@ The engine is a plain local API, documented live at `http://127.0.0.1:7150/v1/do
 ## Learn it
 
 - Seven short lessons, in the order you use the app: https://forgebun.com/go/bs_learn
-- How the first film was made, and what went wrong: https://forgebun.com/go/bs_film
+- What is new in 0.4.3, and how the first film was made: https://forgebun.com/go/bs_film
 
 ## Feedback
 
