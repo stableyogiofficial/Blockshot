@@ -10,7 +10,7 @@ With **Pro** on, every shot becomes a short video, the eyes check every picture 
 misses, and one button runs the whole thing overnight and cuts the film. Pro switches on with the
 Blockshot key from your Stable Yogi account page — one setup file for everyone.
 
-> **Early test (0.4.2).** This is the first public build. Please break it and tell me:
+> **Early test (0.4.3).** It is early and it changes often. Please break it and tell me:
 > your Stable Yogi account page (Settings → API, the Blockshot card) · the Discord · or open an issue here.
 
 ## Download
@@ -19,8 +19,8 @@ Get the setup file from the **Releases** page on the right. Two files:
 
 | File | What it is |
 |---|---|
-| `Blockshot-Setup-0.4.2.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
-| `Blockshot-0.4.2-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
+| `Blockshot-Setup-0.4.3.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
+| `Blockshot-0.4.3-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
 
 Each file has a `.sha256` next to it. The setup is not code-signed, so Windows shows its SmartScreen
 box once: **More info → Run anyway.**
@@ -66,7 +66,8 @@ inside a file you share.
 
 - **Takes:** one video per shot from its kept frame.
 - **The eyes:** a vision model scores every picture and take and redraws the misses.
-- **Cut:** the takes joined into one film.
+- **Cut:** the takes joined into one film, with a song under it if you want one, and every cut
+  landing on the beat of that song.
 - **Overnight:** one button, wake up to a film.
 - **Hand it to Claude:** an MCP server so Claude Code, Claude Desktop or a local model runs the board for
   you (`claude mcp add blockshot -- "%LOCALAPPDATA%\Blockshot\python\python.exe" -m blockshot.agent.mcp`).
