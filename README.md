@@ -10,7 +10,7 @@ With **Pro** on, every shot becomes a short video, the eyes check every picture 
 misses, and one button runs the whole thing overnight and cuts the film. Pro switches on with the
 Blockshot key from your Stable Yogi account page — one setup file for everyone.
 
-> **Early test (0.4.3).** It is early and it changes often. Please break it and tell me:
+> **Early test (0.5.0).** It is early and it changes often. Please break it and tell me:
 > your Stable Yogi account page (Settings → API, the Blockshot card) · the Discord · or open an issue here.
 
 ## Download
@@ -19,14 +19,15 @@ Get the setup file from the **Releases** page on the right. Two files:
 
 | File | What it is |
 |---|---|
-| `Blockshot-Setup-0.4.3.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
-| `Blockshot-0.4.3-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
+| `Blockshot-Setup-0.5.0.exe` | installs per user into `%LOCALAPPDATA%\Blockshot`, no admin, touches nothing else |
+| `Blockshot-0.5.0-portable.zip` | unzip anywhere, double-click `Blockshot.cmd` |
 
 Each file has a `.sha256` next to it. The setup is not code-signed, so Windows shows its SmartScreen
 box once: **More info → Run anyway.**
 
-**New in 0.4.3:** put a song under your film, and have every cut land on its beat. What both settings
-do, what to set them to, and what they will not do: <https://forgebun.com/go/bs_film>
+**New in 0.5.0:** one MiniMax H3 take can now run for 40 seconds and keep the same face, with a Fast and a
+Detail upscale for it, and a helper that tells you when a shot's words and its seconds do not match. All
+three, step by step: <https://forgebun.com/go/bs_film>
 
 ## The first film, and the example inside
 
@@ -61,6 +62,7 @@ inside a file you share.
 - Unlimited boards, unlimited pictures, forever. Your own models: import any ComfyUI workflow with the
   Blockshot tags and it becomes a step.
 - Script in, board out: paste a script and the Writer follows it word for word.
+- The word and time helper: each talking shot says if its words fit its seconds, and one click fixes it.
 - Four of each: four seeds per frame, keep the one you like.
 - Sheet and Export: the storyboard on one printable page, a shot list CSV, a folder that travels.
 - Reuse people: the same faces in the next episode.
@@ -68,6 +70,11 @@ inside a file you share.
 ## What Pro adds
 
 - **Takes:** one video per shot from its kept frame.
+- **Long Take:** one shot up to 40 seconds, with its voice and sound.
+- **Speed:** MiniMax H3 takes roll with PDMD at 4 steps from the start, about 4 times faster. Slow (20 steps)
+  and any turbo LoRA you have are one click away.
+- **Upscale:** Fast (NVIDIA RTX, about 3 minutes for a 40 s take) or Detail (SeedVR2, slower, draws real
+  detail). Long takes are done in short overlapping pieces, so nothing jumps.
 - **The eyes:** a vision model scores every picture and take and redraws the misses.
 - **Cut:** the takes joined into one film, with a song under it if you want one, and every cut
   landing on the beat of that song.
@@ -91,7 +98,7 @@ The engine is a plain local API, documented live at `http://127.0.0.1:7150/v1/do
 ## Learn it
 
 - Seven short lessons, in the order you use the app: https://forgebun.com/go/bs_learn
-- What is new in 0.4.3, and how the first film was made: https://forgebun.com/go/bs_film
+- What is new in 0.5.0, and how the first film was made: https://forgebun.com/go/bs_film
 
 ## Feedback
 
