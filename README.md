@@ -26,6 +26,8 @@ Get the setup file from the **Releases** page on the right. Two files:
 Each file has a `.sha256` next to it. The setup is not code-signed, so Windows shows its SmartScreen
 box once: **More info → Run anyway.**
 
+What changed in each version: [CHANGELOG.md](CHANGELOG.md).
+
 **New in 0.5.0:** one MiniMax H3 take can now run for 40 seconds and keep the same face, with a Fast and a
 Detail upscale for it, and a helper that tells you when a shot's words and its seconds do not match. All
 three, step by step: <https://forgebun.com/go/bs_film>
